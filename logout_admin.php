@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	session_destroy();
+	header('location:login_admin.php');
+    unset($_SESSION['ADMIN_LOGIN']);
+    unset($_SESSION['ADMIN_USERNAME']);
+    header('location:login_admin.php');
+    die();
+?>
